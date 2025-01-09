@@ -89,23 +89,26 @@ This will generate:
 y.tab.c (C code for the parser)
 y.tab.h (Header file for the parser)
 
-Step 3: Compile the Generated Code
+#### Step 3: Compile the Generated Code
 
-Once you have the lex.yy.c and y.tab.c files, compile them using GCC:
+- Once you have the lex.yy.c and y.tab.c files, compile them using GCC:
 
-gcc -o minicompiler lex.yy.c y.tab.c
+  ```bash
+  gcc -o minicompiler lex.yy.c y.tab.c
 
 This command:
 Compiles the Lex and Yacc generated C files.
 (Optionally) Links the Lex library (-ll) and the Yacc library (-ly).
 Generates an executable file named minicompiler.
 
-4. Run the Compiler
+### 4. Run the Compiler
+
 After successful compilation, you can now run the minicompiler.
 
-Use the following command to run the compiler:
+- Use the following command to run the compiler:
 
-./minicompiler
+  ```bash
+  ./minicompiler
 
 Make sure you have an input file (e.g., input.c or input.txt) with source code to compile.
 
