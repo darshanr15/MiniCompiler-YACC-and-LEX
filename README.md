@@ -57,27 +57,32 @@ During installation, select Bison, Flex, and GCC packages.
 After installation, open the Cygwin terminal.
 
 ### 2. Prepare Your Files
+
 Make sure you have the following files in your working directory:
 
-mini.l (Lex file for lexical analysis)
-mini.y (Yacc/Bison file for parsing)
+- `minicompiler.l` (Lex file for lexical analysis)
 
-3. Generate C Code from the .l and .y Files
+- `minicompiler.y` (Yacc/Bison file for parsing)
+
+### 3. Generate C Code from the `.l` and `.y` Files
+
 Now that the necessary tools are installed, follow these steps to generate the required C files:
 
-Step 1: Generate the Lexical Analyzer Code
+#### Step 1: Generate the Lexical Analyzer Code
 
-In your terminal (whether on Linux or Windows), run:
+- In your terminal (whether on Linux or Windows), run:
 
-flex mini.l
+  ```bash
+  flex mini.l
 
 This will generate a file called lex.yy.c.
 
-Step 2: Generate the Parser Code
+#### Step 2: Generate the Parser Code
 
-Run the following command to generate the parser code:
+- Run the following command to generate the parser code:
 
-bison -d mini.y
+  ```bash
+  bison -d mini.y
 
 This will generate:
 
