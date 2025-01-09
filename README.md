@@ -19,7 +19,14 @@ A simple compiler project demonstrating lexical analysis and syntax parsing usin
 
 Follow these steps to run your mini-compiler on Linux or Windows.
 
-1. Install Required Tools
+### 1. Install Required Tools
+
+#### For Linux (Ubuntu/Debian-based systems):
+
+- Update your package list:
+
+  ```bash
+  sudo apt-get update
 
 For Linux (Ubuntu/Debian-based systems):
 
