@@ -27,20 +27,17 @@ Follow these steps to run your mini-compiler on Linux or Windows.
 
   ```bash
   sudo apt-get update
+  
+- Install Bison, Flex, and GCC:
 
-For Linux (Ubuntu/Debian-based systems):
+  ```bash
+  sudo apt-get install bison flex gcc
 
-Update your package list:
-
-sudo apt-get update
-
-Install Bison, Flex, and GCC:
-sudo apt-get install bison flex gcc
 Bison is the GNU version of Yacc.
 Flex is a tool for generating lexical analyzers (lexical scanning).
 GCC is the GNU Compiler Collection used for compiling C code.
 
-For Windows (Using MSYS2 or Cygwin):
+#### For Windows (Using MSYS2 or Cygwin):
 
 Option 1: MSYS2 (Recommended)
 
@@ -48,9 +45,10 @@ Download and Install MSYS2 from the official website.
 
 After installation, open the MSYS2 terminal.
 
-Install Bison, Flex, and GCC by running the following command in the MSYS2 terminal:
+- Install Bison, Flex, and GCC by running the following command in the MSYS2 terminal:
 
-pacman -S mingw-w64-x86_64-bison mingw-w64-x86_64-flex mingw-w64-x86_64-gcc
+  ```bash
+  pacman -S mingw-w64-x86_64-bison mingw-w64-x86_64-flex mingw-w64-x86_64-gcc
 
 Option 2: Cygwin
 
@@ -58,7 +56,7 @@ Download and Install Cygwin from Cygwin's official website.
 During installation, select Bison, Flex, and GCC packages.
 After installation, open the Cygwin terminal.
 
-2. Prepare Your Files
+### 2. Prepare Your Files
 Make sure you have the following files in your working directory:
 
 mini.l (Lex file for lexical analysis)
